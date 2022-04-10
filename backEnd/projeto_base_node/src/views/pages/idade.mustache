@@ -1,0 +1,19 @@
+{{>partials/header}}
+
+<h1>Formulario</h1>
+<hr>
+<h2>O que qual a sua idade?</h2>
+
+<form method="POST" action="/idade_resultado">
+  <input type="number" name="ano" placeholder="informe sua idade"/>
+  <input type="submit" value="enviar"/>
+</form>
+{{#nome}}
+ 
+{{/nome}}
+{{#mostrarIdade}}
+   <hr>
+   data de nacimento {{idade}}
+{{/mostrarIdade}}
+<hr>  
+{{>partials/footer}}

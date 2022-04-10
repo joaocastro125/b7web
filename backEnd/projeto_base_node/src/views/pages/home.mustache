@@ -1,0 +1,52 @@
+{{>partials/header}}
+<body>
+{{! acessando variavel }}
+    <h1>titulo da pagina</h1>
+     <hr>
+     {{#falseOuTrue}}
+    ola ,tudo bem {{name}}
+     {{/falseOuTrue}}
+    {{! condicional }}
+    {{#maiorIdade}}
+    qual a sua idade
+    {{/maiorIdade}}
+
+
+
+    <h2>PRODOCTS</h2>
+    <ul>
+    {{#produtos}}
+    
+      <li>{{title}} - {{price}} </li> 
+   
+   {{/produtos}}
+   
+   {{! frases simples utilizamos o . }}
+   <ul>
+    {{#frasesDodia}}
+       <li>{{.}}</li>
+    {{/frasesDodia}}
+     {{^listagem}}
+       não a messagem hoje. 
+    {{/listagem}}
+   </ul>
+    </ul>
+    <hr>
+    {{#list}}
+    <ul>
+      <li>{{title }} - R$ {{price}} </li> 
+    </ul>
+     
+    {{/list}}
+    <hr>
+    {{#expensiveList}}
+       <ul>
+      <li>{{title }} - R$ {{price}} </li> 
+    </ul>
+    {{/expensiveList}}
+    {{>partials/footer}}
+   
+
+
+
+   
