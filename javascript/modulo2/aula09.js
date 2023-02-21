@@ -15,3 +15,4 @@ console.log(`meus incredientes -> [${incredientes}]`)
 
 console.log(`meus incredientes -> [${incredientes.length}]`)
 // tem o pop que remove 
+// push adciona ao final 
