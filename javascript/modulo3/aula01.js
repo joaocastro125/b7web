@@ -13,9 +13,13 @@ console.log(document.querySelector("botao"))
 
 console.log(document.querySelector("body").children[0])
 
-// innerHTML FAZ UMA ALTERAÇÃO NO HTML 
+// innerHTML FAZ UMA ALTERAÇÃO NO HTML interno do elemento 
+// o innerText faz ateração no texto sem que mostre o html 
 
 console.log(document.querySelector("h1").innerHTML="aprendo manipulação")
+
+
+
 
 // 
 
